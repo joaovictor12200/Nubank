@@ -1,0 +1,78 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.desative{
+	left: -100% !important;
+}
+#flash{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #840ad2;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 99;
+	transition: 1s;
+}
+#flash img{
+	animation: flash-nubank 2s infinite;
+}
+@keyframes flash-nubank {
+	50%{
+		opacity: 0;
+	}
+}
+
+
+body{
+	overflow-y: hidden;
+}
+
+header{
+	background-color: #840ad2;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: space-between;
+}
+header nav{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	color: #fff;
+}
+header nav .left{
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, .5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header nav div i{
+	font-size: 20px;
+	margin: 0 10px;
+}
+header h1{
+	padding: 20px 0 20px 20px;
+	font-size: 1.8rem;
+	color: #FFF;
+}
+
+#conta div{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	justify-content: space-between;
+}
+#conta div p{
+	font-size: 1.3rem;}

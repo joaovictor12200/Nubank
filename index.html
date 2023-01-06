@@ -5,13 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 
 	<script src="https://kit.fontawesome.com/2f7884ee67.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/index.css">
-	<title>Nubank</title>
+	<link rel="stylesheet" href="css/nubank.css">
+	<title>Nubank Web - simulador</title>
 </head>
 <body>
+	<div class="cadastro">
+		
 	<div class="header">
 		<img src="assents/img/Logo-nubank.jpg" alt="logo nubank" width="80px">
 		<i class="fa-solid fa-user-lock"></i>
@@ -34,17 +39,14 @@
 			<input type="number" name="cpf" id="cpf" class="inputUser" required>
 			<label for="cpf" class="labelInput" >CPF</label>
 		</div>
-		<div class="inputBox" onclick="selectSexo()">
-			<input type="text" name="sexo" id="sexo" class="inputUser" onclick="selectSexo" required>
-			<label for="sexo" class="labelInput" >Sexo</label>
-			<div class="box-select" id="box">
-				<button id="masculinno" onclick="masculino()">masculino</button>
-				<button id="feminino">feminino</button>
-				<button id="outros">outros</button>
-			</div>
+		<div class="inputBox">
+			<input type="number" name="dinheiro" id="dinheiro" class="inputUser" required>
+			<label for="dinheiro" class="labelInput" >Dinheiro</label>
 		</div>
 
+
 		<button onclick="cadastro()" id="pronto"><i class="fa-solid fa-paper-plane" style="color: #840ad2; font-size: 20px;"></i></button>
+	</div>
 	</div>
 </body>
 <script src="js/cadastro.js"></script>
